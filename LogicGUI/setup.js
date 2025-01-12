@@ -65,6 +65,7 @@ window.onload = () => {
             newDiv.className = 'wordletters';
             newDiv.id = iSetup.toString() + j.toString();
 
+            newDiv.addEventListener( 'click', wordTouchHandler );
             newDiv.addEventListener( 'touchstart', wordTouchHandler );
 
             keysInputDiv.appendChild(newDiv);
@@ -82,6 +83,7 @@ window.onload = () => {
             newDiv.innerHTML = keyboard[iSetup][j];
 
             newDiv.addEventListener( 'click', keyboardTouchHandler );
+            newDiv.addEventListener( 'touchstart', keyboardTouchHandler );
 
             keyboardDiv.appendChild(newDiv);
         }

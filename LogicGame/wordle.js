@@ -1,8 +1,8 @@
 // let possibleWords = require('./wordlist');
 
+// let correctWord = ['', '', '', '', ''];
 let correctWord = ['', '', '', '', ''];
-//let correctWord = ['', ['e'], ['c'], '', ['y']];
-let lettersMissing = []; //['a', 'u', 'd', 'i', 'o', 't', 'h'];
+let lettersMissing = [];
 // for letters that are known to appear once, not more, and not zero times
 let lettersNotRepeated = [];
 
