@@ -31,7 +31,7 @@ enterKeyHandler = () => {
         return false;
     };
 
-    for(let i2 = iSetup - 1; i2 >= 0; --i2) {
+    for(let i2 = 0; i2 < iSetup; ++i2) {
         for(let j2 = 0; j2 < 5; ++j2) {
             const nextLetterDiv = document.getElementById(
                 i2.toString() + j2.toString()
@@ -47,6 +47,21 @@ enterKeyHandler = () => {
                         lettersNotRepeated.push(letter);
                     }
                     correctWord[j2] = letter;
+                    /* remove letter from any arrays containing it
+                        if the letter is supposed to be repeated then...
+                        oh well
+                    */
+                    for(let j3 = 0; j3 < 5; ++j3) {
+                        if(typeof correctWord[j3] === 'object') {
+                            const index = correctWord[j3].indexOf(letter);
+                            if(index !== -1) {
+                                correctWord[j3].splice(index, 1);
+                                if(correctWord[j3].length === 0) {
+                                    correctWord[j3] = '';
+                                }
+                            }
+                        }
+                    }
                     break;
                 }
                 case colors[1]: {

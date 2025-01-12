@@ -91,7 +91,7 @@ window.onload = () => {
     }
 
     try {
-        // fetch('closeServer');
+        fetch('closeServer');
     }
     catch(e) {}
 }

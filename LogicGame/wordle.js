@@ -1,6 +1,3 @@
-// let possibleWords = require('./wordlist');
-
-// let correctWord = ['', '', '', '', ''];
 let correctWord = ['', '', '', '', ''];
 let lettersMissing = [];
 // for letters that are known to appear once, not more, and not zero times
