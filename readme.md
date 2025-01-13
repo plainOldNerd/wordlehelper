@@ -30,7 +30,7 @@ seen by the ssoa script, are
 - mommy
 - nanna
 - nonna
-- can't be bother anymore. It suffices to say there's a few!
+- can't be bothered anymore. It suffices to say there's a few!
 
 In hindsight, it was perhaps a bad assuption RE repeated letters that there
 are no words with three repeated letters.
